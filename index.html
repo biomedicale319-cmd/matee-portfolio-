@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Matee ur Rasool Meladi — Electronics Engineering student specializing in embedded systems, FPGA design, signal processing, and AI-based hardware development.">
+<meta name="keywords" content="Matee ur Rasool, Electronics Engineer, Embedded Systems, FPGA, Verilog, IoT, Signal Processing, Portfolio">
+<meta name="author" content="Matee ur Rasool Meladi">
+<title>Matee ur Rasool Meladi | Electronics Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">M<span>.</span>R</div>
+    <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+    <div class="pre-text" id="preText">Loading experience... 0%</div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav id="navbar">
+  <div class="nav-wrap">
+    <a href="#home" class="nav-logo"><span class="logo-code">&lt;</span>Matee<span class="logo-dot">.</span>Rasool<span class="logo-code">/&gt;</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nlink active" data-sec="home">Home</a></li>
+      <li><a href="#about" class="nlink" data-sec="about">About</a></li>
+      <li><a href="#focus" class="nlink" data-sec="focus">Focus</a></li>
+      <li><a href="#skills" class="nlink" data-sec="skills">Skills</a></li>
+      <li><a href="#projects" class="nlink" data-sec="projects">Projects</a></li>
+      <li><a href="#journey" class="nlink" data-sec="journey">Journey</a></li>
+      <li><a href="#contact" class="nlink" data-sec="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">⚡ Let's Talk</a>
+      <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mob-overlay" id="mobOverlay"></div>
+<aside class="mob-drawer" id="mobDrawer">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <div class="mob-logo"><span class="logo-code">&lt;</span>M<span class="logo-dot">.</span>R<span class="logo-code">/&gt;</span></div>
+  <ul>
+    <li><a href="#home" class="mob-link"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#about" class="mob-link"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#focus" class="mob-link"><i class="fas fa-bullseye"></i> Focus</a></li>
+    <li><a href="#skills" class="mob-link"><i class="fas fa-bolt"></i> Skills</a></li>
+    <li><a href="#projects" class="mob-link"><i class="fas fa-folder"></i> Projects</a></li>
+    <li><a href="#journey" class="mob-link"><i class="fas fa-road"></i> Journey</a></li>
+    <li><a href="#contact" class="mob-link"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <a href="#contact" class="mob-cta mob-link">⚡ Let's Talk</a>
+</aside>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="assets/neon_bg.png" alt="" class="hero-bg-img" aria-hidden="true">
+      <div class="hero-bg-overlay"></div>
+      <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="hb-dot"></span><span>Open to Research &amp; Internships</span><span class="hb-badge">Pakistan 🇵🇰</span></div>
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-name">Matee ur Rasool<span class="hn-line2">Meladi</span></h1>
+        <div class="hero-role">
+          <span class="hr-prefix">I engineer</span>
+          <div class="hr-rotator" id="hrRotator">
+            <span class="hr-word active">Embedded Systems</span>
+            <span class="hr-word">FPGA Designs</span>
+            <span class="hr-word">Signal Pipelines</span>
+            <span class="hr-word">AI on Edge Devices</span>
+            <span class="hr-word">IoT Systems</span>
+          </div>
+        </div>
+        <p class="hero-desc">Final-year Electronics Engineering student building intelligent, next-generation hardware — from FPGA logic and embedded firmware to signal processing and AI models deployed on real devices.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="hbtn hbtn-primary"><span>Explore My Work</span><i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="hbtn hbtn-ghost"><span>Let's Talk</span><i class="fas fa-paper-plane"></i></a>
+        </div>
+        <div class="hero-socials">
+          <span class="hs-label">Connect:</span>
+          <a href="mailto:engrmateeurrasool@gmail.com" class="hsc" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mate-ur-rasool-meladi-b96390365/" target="_blank" rel="noopener" class="hsc" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://scholar.google.com/citations?user=ACApfRwAAAAJ&hl=en" target="_blank" rel="noopener" class="hsc" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar-scene">
+          <div class="av-ring av-ring-1"></div>
+          <div class="av-ring av-ring-2"></div>
+          <div class="av-ring av-ring-3"></div>
+          <div class="av-glow"></div>
+          <div class="av-frame"><img src="assets/avatar-illustrated.png" alt="Matee ur Rasool Meladi — illustrated avatar" class="av-img"></div>
+          <div class="av-chip chip-1"><i class="fas fa-microchip"></i> FPGA</div>
+          <div class="av-chip chip-2"><i class="fab fa-python"></i> Python</div>
+          <div class="av-chip chip-3"><i class="fas fa-wave-square"></i> DSP</div>
+          <div class="av-chip chip-4"><i class="fas fa-code"></i> Verilog</div>
+          <div class="av-chip chip-5"><i class="fas fa-robot"></i> AI/ML</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll"><div class="hs-mouse"><div class="hs-wheel"></div></div><span>Scroll Down</span></a>
+  </section>
+
+  <div class="stats-band">
+    <div class="stats-wrap">
+      <div class="sband-item"><span class="sband-num">3.83</span><span class="sband-suf">/4.0</span><span class="sband-label">CGPA</span></div>
+      <div class="sband-div"></div>
+      <div class="sband-item"><span class="sband-num" data-target="3">0</span><span class="sband-label">Research Labs</span></div>
+      <div class="sband-div"></div>
+      <div class="sband-item"><span class="sband-num" data-target="4">0</span><span class="sband-suf">+</span><span class="sband-label">Applied Projects</span></div>
+      <div class="sband-div"></div>
+      <div class="sband-item"><span class="sband-num" data-target="1">0</span><span class="sband-label">Publication</span></div>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <img src="assets/avatar.png" alt="Matee ur Rasool Meladi" class="aimg">
+            <div class="aimg-badge"><i class="fas fa-check-circle"></i><span>Electronics Engineering Student</span></div>
+          </div>
+          <div class="about-info-cards">
+            <div class="aic"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span>Kot Addu, Punjab</span></div></div>
+            <div class="aic"><i class="fas fa-briefcase"></i><div><strong>Status</strong><span>Open to Research</span></div></div>
+            <div class="aic"><i class="fas fa-graduation-cap"></i><div><strong>Degree</strong><span>BS Electronics Eng.</span></div></div>
+            <div class="aic"><i class="fas fa-language"></i><div><strong>Languages</strong><span>Urdu, Punjabi, English</span></div></div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="sec-label">Who I Am</div>
+          <h2 class="sec-title">Electronics Engineer &amp;<br><span class="gt">AI Hardware Builder</span></h2>
+          <p class="about-para">I'm <strong>Matee ur Rasool Meladi</strong>, a final-year Electronics Engineering student at the Islamia University of Bahawalpur, driven to advance intelligent electronic systems and contribute to next-generation AI-powered hardware solutions.</p>
+          <p class="about-para">My work spans <strong>embedded systems, FPGA design, and signal processing</strong> — turning raw sensor and channel data into working, real-time systems. I'm especially interested in modern wireless communication, including <strong>adaptive beamforming</strong>, and in radar, UAV, and defense-grade electronics.</p>
+          <div class="about-pillars">
+            <div class="apillar"><div class="api-icon" style="--ic:#6366f1"><i class="fas fa-microchip"></i></div><div><h4>Embedded Systems</h4><p>Microcontrollers · Sensor Integration · RISC-V</p></div></div>
+            <div class="apillar"><div class="api-icon" style="--ic:#06b6d4"><i class="fas fa-wave-square"></i></div><div><h4>FPGA &amp; Hardware</h4><p>Verilog HDL · Xilinx ISE · Spartan-3</p></div></div>
+            <div class="apillar"><div class="api-icon" style="--ic:#10b981"><i class="fab fa-python"></i></div><div><h4>Signal Processing</h4><p>CSI / EMG-style Data · Filtering · Feature Extraction</p></div></div>
+            <div class="apillar"><div class="api-icon" style="--ic:#f59e0b"><i class="fas fa-robot"></i></div><div><h4>AI &amp; Deployment</h4><p>Machine Learning · Edge Deployment · Raspberry Pi</p></div></div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="hbtn hbtn-primary"><span>Let's Collaborate</span><i class="fas fa-bolt"></i></a>
+            <a href="assets/Matee-ur-Rasool-Meladi-CV.pdf" download="Matee-ur-Rasool-Meladi-CV.pdf" class="hbtn hbtn-ghost"><span>Download CV</span><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="focus" class="focus">
+    <div class="srv-bg"><img src="assets/services_bg.png" alt="" aria-hidden="true"><div class="srv-bg-overlay"></div></div>
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Where I Focus</div>
+        <h2 class="sec-title">Technical <span class="gt">Focus Areas</span></h2>
+        <p class="sec-sub">The domains I'm building depth in through lab work and independent projects.</p>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card reveal">
+          <div class="srv-num">01</div>
+          <div class="srv-icon"><i class="fas fa-microchip"></i></div>
+          <h3>Embedded Firmware</h3>
+          <p>Real-time hardware integration and testing across microcontroller- and sensor-driven systems.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> Microcontroller Programming</li>
+            <li><i class="fas fa-check"></i> Sensor Deployment &amp; Acquisition</li>
+            <li><i class="fas fa-check"></i> Hardware Debugging</li>
+          </ul>
+        </div>
+        <div class="srv-card featured reveal">
+          <div class="srv-featured-badge">Core Focus</div>
+          <div class="srv-num">02</div>
+          <div class="srv-icon"><i class="fas fa-wave-square"></i></div>
+          <h3>FPGA &amp; Digital Design</h3>
+          <p>Verilog HDL design, simulation, synthesis, and deployment on real FPGA hardware.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> Verilog HDL</li>
+            <li><i class="fas fa-check"></i> Xilinx ISE / Spartan-3</li>
+            <li><i class="fas fa-check"></i> RTL Simulation &amp; Synthesis</li>
+          </ul>
+        </div>
+        <div class="srv-card reveal">
+          <div class="srv-num">03</div>
+          <div class="srv-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3>Signal Processing</h3>
+          <p>Extracting meaningful features from raw Channel State Information and sensor streams.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> CSI-Based Activity Recognition</li>
+            <li><i class="fas fa-check"></i> Filtering &amp; Feature Extraction</li>
+            <li><i class="fas fa-check"></i> MATLAB &amp; Python Pipelines</li>
+          </ul>
+        </div>
+        <div class="srv-card reveal">
+          <div class="srv-num">04</div>
+          <div class="srv-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI on Embedded Platforms</h3>
+          <p>Training and deploying machine learning models on edge devices for real-time inference.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> Machine Learning</li>
+            <li><i class="fas fa-check"></i> Model Deployment (Raspberry Pi)</li>
+            <li><i class="fas fa-check"></i> Google Colab / Streamlit</li>
+          </ul>
+        </div>
+        <div class="srv-card reveal">
+          <div class="srv-num">05</div>
+          <div class="srv-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>PCB &amp; Circuit Design</h3>
+          <p>Schematic capture and layout for custom electronic boards and prototypes.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> EasyEDA / Cadence Virtuoso</li>
+            <li><i class="fas fa-check"></i> CST Studio (EM Simulation)</li>
+            <li><i class="fas fa-check"></i> Schematic &amp; Layout Design</li>
+          </ul>
+        </div>
+        <div class="srv-card reveal">
+          <div class="srv-num">06</div>
+          <div class="srv-icon"><i class="fas fa-wifi"></i></div>
+          <h3>IoT Integration</h3>
+          <p>Bridging traditional hardware with modern connected systems for automation.</p>
+          <ul class="srv-list">
+            <li><i class="fas fa-check"></i> Industrial Automation (PLC–ESP32)</li>
+            <li><i class="fas fa-check"></i> Blynk / Arduino IDE</li>
+            <li><i class="fas fa-check"></i> Sensor-to-Cloud Pipelines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="skl-bg"><img src="assets/hero_bg.png" alt="" aria-hidden="true"><div class="skl-bg-overlay"></div></div>
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Expertise</div>
+        <h2 class="sec-title">Technical <span class="gt">Toolkit</span></h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><i class="fas fa-code"></i> Languages &amp; ML</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>C++</span><span>Verilog</span><span>Assembly</span><span>RISC-V</span><span>MATLAB</span><span>Machine Learning</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><i class="fas fa-microchip"></i> EDA &amp; Hardware Tools</h3>
+          <div class="skill-tags">
+            <span>Xilinx ISE 14.7</span><span>Cadence Virtuoso</span><span>CST Studio</span><span>EasyEDA</span><span>Simulink</span><span>Arduino IDE</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><i class="fas fa-wifi"></i> Systems &amp; Deployment</h3>
+          <div class="skill-tags">
+            <span>Sensor Acquisition</span><span>IoT Integration</span><span>Model Deployment</span><span>Blynk</span><span>Streamlit</span><span>Google Colab</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-cloud reveal">
+        <div class="tc-title">Technologies I Work With</div>
+        <div class="tc-tags">
+          <span class="tct" style="--tc:#6366f1"><i class="fas fa-microchip"></i> FPGA</span>
+          <span class="tct" style="--tc:#f59e0b"><i class="fab fa-python"></i> Python</span>
+          <span class="tct" style="--tc:#06b6d4"><i class="fas fa-code"></i> C++</span>
+          <span class="tct" style="--tc:#ec4899"><i class="fas fa-wave-square"></i> Verilog</span>
+          <span class="tct" style="--tc:#8b5cf6"><i class="fas fa-robot"></i> Machine Learning</span>
+          <span class="tct" style="--tc:#10b981"><i class="fas fa-satellite-dish"></i> CSI / DSP</span>
+          <span class="tct" style="--tc:#6366f1"><i class="fas fa-microchip"></i> ESP32</span>
+          <span class="tct" style="--tc:#06b6d4"><i class="fas fa-wifi"></i> IoT</span>
+          <span class="tct" style="--tc:#f59e0b"><i class="fas fa-drafting-compass"></i> EasyEDA</span>
+          <span class="tct" style="--tc:#8b5cf6"><i class="fas fa-flask"></i> Cadence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Portfolio</div>
+        <h2 class="sec-title">Featured <span class="gt">Projects</span></h2>
+        <p class="sec-sub">Academic and lab projects across embedded systems, IoT, and AI.</p>
+      </div>
+      <div class="proj-filters">
+        <button class="pf-btn active" data-f="all">All</button>
+        <button class="pf-btn" data-f="embedded">Embedded</button>
+        <button class="pf-btn" data-f="iot">IoT</button>
+        <button class="pf-btn" data-f="ai">AI / Signal</button>
+        <button class="pf-btn" data-f="software">Software</button>
+      </div>
+      <div class="proj-grid" id="projGrid">
+        <div class="proj-card show" data-cat="embedded ai">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#10b981,#06b6d4)"><i class="fas fa-satellite-dish"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>CSI</span><span>Signal Processing</span><span>Raspberry Pi</span></div>
+            <h3>CSI-Based Human Activity Recognition</h3>
+            <p>Collected raw Channel State Information from multiple subjects, extracted features via filtering, trained ML models, and deployed real-time recognition on a Raspberry Pi.</p>
+            <div class="pc-foot"><span class="pc-status"><span></span>Mar – Jun 2025</span></div>
+          </div>
+        </div>
+        <div class="proj-card show" data-cat="embedded">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#6366f1,#8b5cf6)"><i class="fas fa-wave-square"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>Verilog HDL</span><span>Xilinx ISE</span><span>Spartan-3</span></div>
+            <h3>FPGA 3-Bit Up/Down Counter</h3>
+            <p>Designed a synchronous up/down counter in Verilog, verified via simulation, then synthesized and deployed on a Xilinx Spartan-3 FPGA with LED/seven-segment output.</p>
+            <div class="pc-foot"><span class="pc-status"><span></span>Dec 2025</span></div>
+          </div>
+        </div>
+        <div class="proj-card show" data-cat="iot embedded">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#f59e0b,#ec4899)"><i class="fas fa-industry"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>ESP32</span><span>Industrial Automation</span><span>IoT</span></div>
+            <h3>PLC–ESP32 Industrial Automation</h3>
+            <p>Integrated a PLC Work Cell 34-120 machine with an ESP32 controller at CARE Lab, bridging traditional PLC systems with modern IoT controllers toward Industry 4.0.</p>
+            <div class="pc-foot"><span class="pc-status"><span></span>Jun – Aug 2025</span></div>
+          </div>
+        </div>
+        <div class="proj-card show" data-cat="iot embedded">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#06b6d4,#6366f1)"><i class="fas fa-car"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>C/C++</span><span>Microcontrollers</span><span>Sensors</span></div>
+            <h3>Smart Adaptive Speed &amp; Safety Control (EV)</h3>
+            <p>Built an IoT-enabled system that automatically adjusts electric vehicle speed based on road and traffic conditions, improving safety and energy efficiency.</p>
+            <div class="pc-foot"><span class="pc-status"><span></span>Jan – Apr 2024</span></div>
+          </div>
+        </div>
+        <div class="proj-card show" data-cat="software">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#ec4899,#6366f1)"><i class="fas fa-school"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>React</span><span>FastAPI</span><span>SQLAlchemy</span></div>
+            <h3>Full-Stack School Management System</h3>
+            <p>Built a full-stack system for student records, fees, and payroll — React frontend, FastAPI backend, REST APIs, and secure auth with JWT and Bcrypt.</p>
+            <div class="pc-foot"><span class="pc-status"><span></span>Oct – Nov 2025</span></div>
+          </div>
+        </div>
+        <div class="proj-card show" data-cat="ai software">
+          <div class="pc-img" style="--g:linear-gradient(135deg,#8b5cf6,#10b981)"><i class="fas fa-notes-medical"></i></div>
+          <div class="pc-body">
+            <div class="pc-tags"><span>Deep Learning</span><span>Capsule Networks</span><span>Published</span></div>
+            <h3>Facial Acne Severity Classification</h3>
+            <p>Co-authored a hybrid attention-guided capsule framework for automated facial acne severity classification, published in Spectrum of Engineering Sciences.</p>
+            <div class="pc-foot">
+              <span class="pc-status"><span></span>2025</span>
+              <a href="https://www.thesesjournal.com/index.php/1/article/view/1751" target="_blank" rel="noopener" class="pc-more">Read paper <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="timeline-sec">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">My Journey</div>
+        <h2 class="sec-title">Education &amp; <span class="gt">Research</span></h2>
+      </div>
+      <div class="tl-wrap">
+        <div class="tl-line"></div>
+        <div class="tl-items">
+          <div class="tl-item tl-left reveal">
+            <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-card">
+              <div class="tlc-type edu">Education</div>
+              <h3>BS in Electronics Engineering</h3>
+              <div class="tlc-org"><i class="fas fa-university"></i> The Islamia University of Bahawalpur</div>
+              <div class="tlc-date"><i class="fas fa-calendar-alt"></i> Expected Graduation: July 2027</div>
+              <p>CGPA 3.83/4.0. Coursework in Digital System Design, DSP, AI, Computer Architecture, Embedded Systems, EM Theory, and Power Electronics.</p>
+              <div class="tlc-skills"><span>Digital Systems</span><span>DSP</span><span>Embedded Systems</span></div>
+            </div>
+          </div>
+          <div class="tl-item tl-right reveal">
+            <div class="tl-dot present"><i class="fas fa-flask"></i></div>
+            <div class="tl-card highlight-card">
+              <div class="tlc-type work">Ongoing</div>
+              <h3>CARE Lab</h3>
+              <div class="tlc-org"><i class="fas fa-building"></i> Center of Automation, Robotics &amp; Embedded Systems</div>
+              <div class="tlc-date"><i class="fas fa-calendar-alt"></i> Aug 2024 – Present</div>
+              <p>Real-time hardware integration and testing, microcontroller troubleshooting, and hardware projects combining electronics, programming, and automation.</p>
+              <div class="tlc-skills"><span>IoT</span><span>Embedded Systems</span></div>
+            </div>
+          </div>
+          <div class="tl-item tl-left reveal">
+            <div class="tl-dot"><i class="fas fa-brain"></i></div>
+            <div class="tl-card">
+              <div class="tlc-type work">Research</div>
+              <h3>Deep Embedded Lab</h3>
+              <div class="tlc-org"><i class="fas fa-university"></i> The Islamia University of Bahawalpur</div>
+              <div class="tlc-date"><i class="fas fa-calendar-alt"></i> Nov 2024 – Aug 2025</div>
+              <p>Intensive AI training program — machine learning, deep learning, and neural network implementation on embedded platforms.</p>
+              <div class="tlc-skills"><span>Deep Learning</span><span>Embedded AI</span></div>
+            </div>
+          </div>
+          <div class="tl-item tl-right reveal">
+            <div class="tl-dot"><i class="fas fa-satellite-dish"></i></div>
+            <div class="tl-card">
+              <div class="tlc-type work">Research</div>
+              <h3>Communication Lab — CSI-HAR</h3>
+              <div class="tlc-org"><i class="fas fa-university"></i> The Islamia University of Bahawalpur</div>
+              <div class="tlc-date"><i class="fas fa-calendar-alt"></i> Mar 2025 – Jun 2025</div>
+              <p>Collected and processed Channel State Information, trained activity-classification models, and deployed on Raspberry Pi for edge-based recognition.</p>
+              <div class="tlc-skills"><span>Signal Processing</span><span>Edge AI</span></div>
+            </div>
+          </div>
+          <div class="tl-item tl-left reveal">
+            <div class="tl-dot"><i class="fas fa-certificate"></i></div>
+            <div class="tl-card">
+              <div class="tlc-type cert">Certifications</div>
+              <h3>Engineering &amp; Product Design / AI for Everyone</h3>
+              <div class="tlc-org"><i class="fas fa-award"></i> Arizona State University &amp; DeepLearning.AI</div>
+              <p>Completed "Engineering and Product Design" (ASU) and "AI for Everyone" (DeepLearning.AI).</p>
+              <div class="tlc-skills"><span>Product Design</span><span>AI Fundamentals</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="pubs">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Recognition</div>
+        <h2 class="sec-title">Publications &amp; <span class="gt">Achievements</span></h2>
+      </div>
+      <div class="pub-grid">
+        <div class="pub-card reveal">
+          <div class="pub-tag">SPECTRUM OF ENGINEERING SCIENCES · VOL. 3, NO. 12 · 2025</div>
+          <div class="pub-title">Hybrid Attention-Guided Capsule Framework for Automated Facial Acne Severity Classification</div>
+          <div class="pub-authors">Matee ur Rasool, Abdul Salam, Ayesha Nazir, Talha Mushtaq</div>
+          <div class="pub-meta">pp. 973–1002</div>
+          <a class="pub-link" href="https://www.thesesjournal.com/index.php/1/article/view/1751" target="_blank" rel="noopener">Read the paper <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="achieve-card reveal">
+          <h3>Achievements</h3>
+          <ul class="achieve-list">
+            <li><i class="fas fa-award"></i><span><strong>Honhaar Scholarship</strong> — awarded for outstanding academic performance.</span></li>
+            <li><i class="fas fa-laptop"></i><span><strong>PM's Laptop Scheme</strong> — awarded in recognition of academic merit.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Get In Touch</div>
+        <h2 class="sec-title">Let's Start a <span class="gt">Conversation</span></h2>
+        <p class="sec-sub">Open to research collaborations, internships, and interesting problems in embedded AI and signal processing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="cl-card">
+            <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+            <div class="cl-info"><span>Email Me</span><a href="mailto:engrmateeurrasool@gmail.com">engrmateeurrasool@gmail.com</a></div>
+          </div>
+          <div class="cl-card">
+            <div class="cl-icon" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)"><i class="fab fa-linkedin-in"></i></div>
+            <div class="cl-info"><span>LinkedIn</span><a href="https://www.linkedin.com/in/mate-ur-rasool-meladi-b96390365/" target="_blank" rel="noopener">Matee ur Rasool Meladi</a></div>
+          </div>
+          <div class="cl-card">
+            <div class="cl-icon" style="background:linear-gradient(135deg,#10b981,#06b6d4)"><i class="fas fa-graduation-cap"></i></div>
+            <div class="cl-info"><span>Google Scholar</span><a href="https://scholar.google.com/citations?user=ACApfRwAAAAJ&hl=en" target="_blank" rel="noopener">View Publications</a></div>
+          </div>
+          <div class="cl-card">
+            <div class="cl-icon" style="background:linear-gradient(135deg,#f59e0b,#ec4899)"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="cl-info"><span>Location</span><a>Kot Addu, Punjab, Pakistan</a></div>
+          </div>
+          <div class="cl-availability"><div class="cla-dot"></div><div><strong>Currently Available</strong><span>Usually replies within a day or two</span></div></div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="cf-row">
+              <div class="cf-group"><label for="cname">Full Name *</label><input type="text" id="cname" placeholder="Your Name" required></div>
+              <div class="cf-group"><label for="cemail">Email Address *</label><input type="email" id="cemail" placeholder="your@email.com" required></div>
+            </div>
+            <div class="cf-group">
+              <label for="ctopic">Topic</label>
+              <select id="ctopic">
+                <option value="">Select a topic...</option>
+                <option>Research Collaboration</option>
+                <option>Internship Opportunity</option>
+                <option>Embedded / FPGA Project</option>
+                <option>AI &amp; Signal Processing</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="cf-group"><label for="csubject">Subject *</label><input type="text" id="csubject" placeholder="What's this about?" required></div>
+            <div class="cf-group"><label for="cmsg">Message *</label><textarea id="cmsg" rows="5" placeholder="Tell me a bit more..." required></textarea></div>
+            <p class="cf-note">This opens your email app with the message pre-filled — nothing is sent from this page directly.</p>
+            <button type="submit" class="cf-submit"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-code">&lt;</span>Matee<span class="logo-dot">.</span>Rasool<span class="logo-code">/&gt;</span></div>
+          <p>Electronics Engineering student building intelligent embedded systems, FPGA designs, and AI-powered hardware.</p>
+          <div class="footer-socials">
+            <a href="mailto:engrmateeurrasool@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/mate-ur-rasool-meladi-b96390365/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://scholar.google.com/citations?user=ACApfRwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul>
+        </div>
+        <div class="footer-links">
+          <h4>Focus Areas</h4>
+          <ul><li><a href="#focus">Embedded Firmware</a></li><li><a href="#focus">FPGA Design</a></li><li><a href="#focus">Signal Processing</a></li><li><a href="#focus">AI on Edge</a></li></ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <div class="fc-item"><i class="fas fa-envelope"></i><span>engrmateeurrasool@gmail.com</span></div>
+          <div class="fc-item"><i class="fas fa-map-marker-alt"></i><span>Kot Addu, Punjab, Pakistan</span></div>
+          <div class="fc-item"><i class="fas fa-circle" style="color:#10b981;font-size:0.5rem"></i><span>Open to Research &amp; Internships</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="fb-inner">
+        <p>© 2026 Matee ur Rasool Meladi. All rights reserved.</p>
+        <p>Electronics Engineer · Embedded Systems &amp; AI Hardware</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="main.js"></script>
+</body>
+</html>
